@@ -1,3 +1,3 @@
-# Land-of-the-Useful
+# YouTube Bot
 
-Making an edit to the readme 
+When a new video from a selected channel is uploaded, ask user to go to video in a popup window.
