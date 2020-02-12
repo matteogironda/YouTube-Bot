@@ -1,5 +1,8 @@
 # Create a pop up window
 from tkinter import *
+from selenium import webdriver
+
+
 def window_create():
 
     class Window(Frame):
@@ -21,15 +24,19 @@ def window_create():
             exit()
 
         def client_goTo(self):
-            exit()
+            browser = webdriver.Chrome(r"C:\Users\giron\Desktop\Python\chromedriver.exe")
+            browser.get('https://www.youtube.com/user/LordPravusGaming')
     root = Tk()
     root.geometry("800x800")
     app = Window(root)
     root.mainloop()
 
-upload = True
+#reload page every minute
 
+
+upload = True
 def main():
+
     if upload == True:
         window_create()
 
